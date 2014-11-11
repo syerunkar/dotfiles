@@ -51,24 +51,18 @@ colorscheme solarized
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 
-" Key bindings
-" map <C-m> :NERDTreeToggle<CR>
-
 " Easymotion
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
 
+" Relative numbers for vim 7.4+
+" allows for quicker movement
 set relativenumber
 set number"
 
-" Easyalign
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+" Key bindings
 vmap <Enter> <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
 nmap <Leader>a <Plug>(EasyAlign)
-
-" NERDTree toggel menu
 map <C-e> :NERDTreeToggle<CR>
 map <C-t> :TagbarToggle<CR>
 
