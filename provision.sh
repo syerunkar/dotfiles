@@ -6,6 +6,7 @@ ln -s .tmux.conf ~
 ln -s .bashrc ~
 ln -s .zshrc ~
 ln -s .vimrc ~
+ln -s .gitconfig ~
 
 # Install Vundle, assumes git is installed
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
