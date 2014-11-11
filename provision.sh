@@ -11,19 +11,19 @@ ln -s .gitconfig ~
 # Install Vundle, assumes git is installed
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-if [ $2 == "ubuntu" ]; then
+if [ $3 == "ubuntu" ]; then
   sudo apt-get update;
   sudo apt-get install -y curl vim nodejs npm docker tmux zsh
 fi
 
-if [ $2 == "centos" ]; then
+if [ $3 == "centos" ]; then
   sudo yum update;
   # Nodejs startup script
   curl -sL https://rpm.nodesource.com/setup | bash -
   sudo yum install -y curl vim nodejs npm docker tmux zsh
 fi
 
-if [ $2 == "mac" ]; then
+if [ $3 == "mac" ]; then
   # Install homebrew
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install tmux zsh node npm pyenv
@@ -31,7 +31,7 @@ fi
 
 # Install omz and version managers. Assumes curl is installed.
 # I trust these sources. Do you?
-if [ $2 != "" ]; then
+if [ $3 != "" ]; then
   # Install oh-my-zsh, assumes zsh is installed
   curl -L http://install.ohmyz.sh | sh
 
