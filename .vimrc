@@ -20,6 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'othree/vim-autocomplpop'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic'
@@ -34,6 +35,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'Yggdroot/indentLine'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'majutsushi/tagbar'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -67,6 +69,7 @@ nmap <Leader>a <Plug>(EasyAlign)
 
 " NERDTree toggel menu
 map <C-e> :NERDTreeToggle<CR>
+map <C-t> :TagbarToggle<CR>
 
 " Enable mousing
 set mouse=a
