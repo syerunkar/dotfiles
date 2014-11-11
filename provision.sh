@@ -25,7 +25,7 @@ fi
 if [ $2 == "mac" ]; then
   # Install homebrew
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew install tmux zsh node
+  brew install tmux zsh node npm pyenv
 fi
 
 # Install omz and version managers. Assumes curl is installed.
@@ -39,4 +39,7 @@ if [ $2 != "" ]; then
 
   # Install NVM
   curl https://raw.githubusercontent.com/creationix/nvm/v0.18.0/install.sh | bash
+
+  # Install PyEnv
+  curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 fi
