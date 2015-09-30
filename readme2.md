@@ -19,18 +19,11 @@ Some EC2 services require manual ssh entry for configuration or modification. Pl
 Enrou's impact tiles are divided up into services represented by AWS resources. This document aims to identify the location, and purpose of each of these resources, as well as inform the reader about deployment best practices that may be in place. The subsystems are listed as follows:
 - **Elasticsearch Service (EC2)**
 - **Impact Tile Data Service (Elastic Beanstalk)**
-- => Tile CMS
-- => Data endpoint
 - **Impact Tile Batch Sync Service (EC2)**
 - **CDN (Cloudfront)**
 - **MySQL Database (RDS)**
 - **DNS (Route 53)**
 
-.
-
-.
-
-.
 
 ## Elasticsearch Service
 
