@@ -35,6 +35,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'majutsushi/tagbar'
+Plugin 'tfnico/vim-gradle'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
