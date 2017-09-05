@@ -36,6 +36,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'majutsushi/tagbar'
 Plugin 'tfnico/vim-gradle'
+Plugin 'jceb/vim-orgmode'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -47,6 +48,7 @@ filetype plugin indent on    " required
 
 " Colors setup
 colorscheme solarized
+let g:solarized_termtrans = 1
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 
@@ -68,3 +70,6 @@ map <C-t> :TagbarToggle<CR>
 " Enable mousing
 set mouse=a
 set ttymouse=xterm
+
+set ignorecase
+set smartcase
